@@ -1,0 +1,127 @@
+:root {
+  --color-primary: #09f;        /* títulos, enlaces principales */
+  --color-bg: #e9e1d1;
+  --color-bg-hover: #dad9d9;
+  --color-text: #333333;
+  --color-accent: #00c853;      /* verde brillante */
+  --color-secondary: #ffab00;   /* amarillo cálido */
+  --color-neutral: #eceff1;     /* gris claro */
+  --color-primary-hover: #007ccf;
+  --color-btn-mode: #09f;
+  --border-image: 1px solid rgb(0, 114, 190);
+  --fuente-titulos: "Inter", sans-serif;   
+  --fuente-textos: "Anonymous Pro", monospace;
+}
+
+.dark {
+  --color-primary: #09f;
+  --color-bg: #13131d;
+  --color-bg-hover: #383846;
+  --color-text: #dcdcdc;
+  --color-accent: #00c853;
+  --color-secondary: #ffab00;
+  --color-neutral: #1a1a24;
+  --color-primary-hover: #007ccf;
+  --border-image: none;
+}
+
+#misProyectos{
+  padding: 0 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#proyectos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 50px;
+  
+}
+
+.infoProjects{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#misProyectos h1{
+  color: var(--color-text);
+  width: 100%;
+  font-family: var(--fuente-titulos);
+}
+
+#misProyectos p{
+  color: var(--color-text);
+  font-family: var(--fuente-textos);
+}
+
+.project{
+  display: flex;
+  gap: 30px;
+}
+
+.tecnProjects{
+  display: flex;
+  gap: 8px;
+}
+
+.tecnProjects p{
+  background-color: #00000048;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.imageProjects{
+  border-radius: 5px;
+  width: 400px;
+  outline: var(--border-image);
+
+}
+
+.srcProject{
+  display: flex;
+  gap: 8px;
+}
+
+.srcProject p{
+  background-color: #00000048;
+  padding: 5px 8px;
+  border-radius: 4px;
+  &:hover{
+    cursor: pointer;
+    background-color: #2b2b2b48;
+    outline: 1px solid var(--color-secondary);
+  }
+}
+
+@media (width >= 1350px) {
+  #misProyectos{
+    padding: 0 240px;
+  }
+}
+
+@media (max-width: 1153px) {
+  #misProyectos{
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 863px) {
+  
+  .project{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .imageProjects{
+    border-radius: 5px;
+    width: 100%;
+  }
+}
