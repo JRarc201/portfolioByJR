@@ -8,7 +8,6 @@
   --color-neutral: #eceff1;     /* gris claro */
   --color-primary-hover: #007ccf;
   --color-btn-mode: #09f;
-  --border-image: 1px solid rgb(0, 114, 190);
   --fuente-titulos: "Inter", sans-serif;   
   --fuente-textos: "Anonymous Pro", monospace;
 }
@@ -22,7 +21,6 @@
   --color-secondary: #ffab00;
   --color-neutral: #1a1a24;
   --color-primary-hover: #007ccf;
-  --border-image: none;
 }
 
 #misProyectos{
@@ -80,7 +78,6 @@
 .imageProjects{
   border-radius: 5px;
   width: 400px;
-  outline: var(--border-image);
 
 }
 
@@ -124,4 +121,5 @@
     border-radius: 5px;
     width: 100%;
   }
+
 }
