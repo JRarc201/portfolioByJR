@@ -32,8 +32,9 @@
   justify-content: center;
 }
 
-.tituloCabecera{
-    color: #09f;
+#misProyectos #tituloCabecera{
+  color: var(--color-primary);
+  font-size: 42px;
 }
 
 #proyectos{
@@ -126,6 +127,15 @@
   .imageProjects{
     width: 100%;
   }
+
+  #proyectos{
+    gap: 20px;
+  }
+
+  .srcProject{
+    padding-bottom: 70px;
+  }
+
 }
 
 @media (width >= 1550px){
@@ -140,6 +150,9 @@
     padding: 0 0;
     width: 100%;
   }
+}
 
-  
+
+@media (width >= 440px){
+
 }
