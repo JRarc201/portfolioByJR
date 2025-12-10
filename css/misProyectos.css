@@ -7,7 +7,7 @@
   --color-secondary: #ffab00;   /* amarillo cálido */
   --color-neutral: #eceff1;     /* gris claro */
   --color-primary-hover: #007ccf;
-  --color-btn-mode: #09f;
+  --border-image: 1px solid rgb(0, 114, 190);
   --fuente-titulos: "Inter", sans-serif;   
   --fuente-textos: "Anonymous Pro", monospace;
 }
@@ -21,6 +21,7 @@
   --color-secondary: #ffab00;
   --color-neutral: #1a1a24;
   --color-primary-hover: #007ccf;
+  --border-image: none;
 }
 
 #misProyectos{
@@ -31,6 +32,9 @@
   justify-content: center;
 }
 
+.tituloCabecera{
+    color: #09f;
+}
 
 #proyectos{
   display: flex;
@@ -57,6 +61,8 @@
 #misProyectos p{
   color: var(--color-text);
   font-family: var(--fuente-textos);
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .project{
@@ -70,7 +76,7 @@
 }
 
 .tecnProjects p{
-  background-color: #00000048;
+  background-color: #00000028;
   padding: 5px 8px;
   border-radius: 4px;
 }
@@ -87,7 +93,7 @@
 }
 
 .srcProject p{
-  background-color: #00000048;
+  background-color: #00000028;
   padding: 5px 8px;
   border-radius: 4px;
   &:hover{
@@ -97,9 +103,9 @@
   }
 }
 
-@media (width >= 1350px) {
+@media (width >= 1370px) {
   #misProyectos{
-    padding: 0 240px;
+    padding: 0 200px;
   }
 }
 
@@ -109,7 +115,7 @@
   }
 }
 
-@media (max-width: 863px) {
+@media (max-width: 990px) {
   
   .project{
     display: flex;
@@ -118,8 +124,22 @@
   }
 
   .imageProjects{
-    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+@media (width >= 1550px){
+  #proyectos{
+    width: 900px;
+  }
+
+  #misProyectos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0;
     width: 100%;
   }
 
+  
 }

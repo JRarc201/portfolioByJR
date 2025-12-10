@@ -63,7 +63,9 @@
   100% { opacity: 1; }
 }
 
-
+.tituloCabecera{
+    color: #09f;
+}
 
 #mainHeader h1{
     font-size: 60px;
@@ -126,7 +128,7 @@
 
 /* RESPONSIVE */ 
 
-@media (max-width: 800px){
+@media (width <= 800px){
     #mainHeader{
         padding-top: 80px;
     }
@@ -142,4 +144,36 @@
         width: 85%;
         font-size: 17px;
     }   
+}
+
+@media (width >= 1550px){
+    #mainHeader{
+        padding-top: 140px;
+    }
+
+
+    #mainHeader img{
+        height: 260px;
+    }
+
+    #mainHeader h1{
+        font-size: 80px;
+    }
+
+    #mainHeader h3{
+        font-size: 25px;
+    }
+
+    #mainHeaderButton .btnMain{
+        height: 60px;
+        width: 180px;
+        font-size: 17px;
+    }
+}
+
+@media (width <= 474px) {
+    #mainHeader h1{
+        padding-top: 20px;
+        font-size: 30px;
+    }
 }
