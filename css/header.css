@@ -29,10 +29,14 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--color-bg);
-    padding: 0 100px;
     position: relative;
+    padding: 0 150px;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -60,13 +64,19 @@ body{
 }
 
 #navbar{
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bg);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 50px;
     font-family: sans-serif;
-    padding: 10px 0px;
+    padding: 10px 20px;
+    background-color: var;
 }
 
 #divLinks{
@@ -103,13 +113,15 @@ body{
     display: none;
 }
 
-@media (max-width: 800px){
+@media (max-width: 872px){
     body{
         padding: 0 25px;
     }
 
+    
     #navbar{
         justify-content: space-between;
+        z-index: 999;
     }
 
     #divLinks{
@@ -118,10 +130,11 @@ body{
         position: absolute;
         right: 0;
         top: 0;
-        bottom: 0;
+        height: 1000%;
         padding: 30px 20px;
         flex-direction: column;
         animation: slideIn .4s forwards;
+        z-index: 9999;
     }
     
     @keyframes slideIn {
@@ -163,4 +176,14 @@ body{
     }
 } 
 
+
+@media (width >= 1550px){
+    #navbar{
+        padding: 30px ;
+    }
+
+    #navbar a{
+        font-size: 20px;
+    }
+}
 

@@ -8,6 +8,7 @@ const body = document.body;
 // Bonton Abrir Menú hamburguesa
 burger.addEventListener('click', () => {
   links.style.display = 'flex';
+  links.style.color = '#09f'
 });
 // Boton Cerrar Menu Hamburguesa
 xBurger.addEventListener('click', () => {

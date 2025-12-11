@@ -42,7 +42,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 180px;
   gap: 50px;
   
 }
@@ -110,13 +110,13 @@
   }
 }
 
-@media (max-width: 1153px) {
+@media (max-width: 1323px) {
   #misProyectos{
     padding: 0 0;
   }
 }
 
-@media (max-width: 990px) {
+@media (width <= 990px) {
   
   .project{
     display: flex;

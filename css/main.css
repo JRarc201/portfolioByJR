@@ -23,15 +23,13 @@
   --color-primary-hover: #007ccf;
 }
 
-
-
 #mainHeader{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 250px;
+    padding-top: 160px;
+    padding-bottom: 100px;
     width: 100%;
 
     color: #00ffbf70; /* verde fosforescente */
@@ -39,27 +37,37 @@
     0 0 2px #00ffbf70,
     0 0 3px #00ffbf70,
     0 0 2px #00ffbf70;
-    animation: flicker 1.5s infinite alternate;
-
+    animation: flicker 1.5s;
 }
 
-#mainHeader::before {
+
+#mainHeader::before{
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(0,255,0,0.05) 0px,
-    rgba(0,255,0,0.05) 2px,
-    transparent 2px,
-    transparent 4px
-  );
+  inset: 0;
+  z-index: 3;
   pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0px,
+    rgba(0,0,0,0) 1px,
+    rgba(0,0,0,0.12) 1px,
+    rgba(0,0,0,0.12) 3px
+  );
+  opacity: 0.85;
+  background-size: 100% 6px; /* controla la altura total del patrón */
+  animation: scanmove 2s linear infinite;
+  mix-blend-mode: overlay;
 }
 
-@keyframes flicker {
-  0% { opacity: 1; }
-  50% { opacity: 0.85; }
+@keyframes scanmove {
+  from { background-position: 0 0; }
+  to   { background-position: 0 6px; } /* debe coincidir con background-size Y */
+}
+
+@keyframes flickerSoft {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.75; }
   100% { opacity: 1; }
 }
 
@@ -69,7 +77,8 @@
     font-weight: 700;
     color: var(--color-primary);
     text-align: center;
-
+    animation: flickerSoft 1.5s infinite alternate;
+    z-index: -1;
 }
 
 #mainHeader h3{
@@ -81,11 +90,14 @@
     0 0 4px #00ff2abd,
     0 0 5px #00ff2abd,
     0 0 7px #00ff2abd;
-    animation: flicker 1.5s infinite alternate;
+    animation: flickerSoft 1.5s infinite alternate;
+    z-index: -1;
 }
 
 #mainHeader img{
     height: 200px;
+    animation: flickerSoft 1.5s infinite alternate;
+    z-index: -1;
 }
 
 #mainHeaderButton{
@@ -126,15 +138,21 @@
 
 @media (width <= 800px){
     #mainHeader{
-        padding-top: 80px;
+        padding-top: 180px; 
     }
 
     #mainHeader h1{
         width: 85%;
         font-size: 42px;
         line-height: 40px;
+        padding-bottom: 7px;
         text-align: center;
     }
+
+    #mainHeader h1{
+        line-height: 40px;
+    }
+
 
     #mainHeader h3{
         width: 85%;
@@ -144,7 +162,7 @@
 
 @media (width >= 1550px){
     #mainHeader{
-        padding-top: 140px;
+        padding-top: 250px;
     }
 
 
@@ -172,11 +190,16 @@
         padding-top: 20px;
         font-size: 30px;
     }
+
+    #mainHeader h1{
+        line-height: 40px;
+        padding-bottom: 1px;
+    }
 }
 
-@media (width <= 410px) {
+@media (width <= 458px) {
     #mainHeader h1{
-        padding-top: 20px;
+        padding-top: 10px;
         font-size: 25px;
     }
 
@@ -184,3 +207,10 @@
         font-size: 13px;
     }
 }
+
+@media (width <= 365px) {
+    #mainHeader h1{
+        line-height: 27px;
+    }
+}
+
