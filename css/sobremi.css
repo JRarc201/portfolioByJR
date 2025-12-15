@@ -7,7 +7,7 @@
   --color-secondary: #ffab00;   /* amarillo cálido */
   --color-neutral: #eceff1;     /* gris claro */
   --color-primary-hover: #007ccf;
-  --border-image: 1px solid rgb(0, 114, 190);
+  --color-btn-mode: #09f;
   --fuente-titulos: "Inter", sans-serif;   
   --fuente-textos: "Anonymous Pro", monospace;
 }
@@ -21,102 +21,80 @@
   --color-secondary: #ffab00;
   --color-neutral: #1a1a24;
   --color-primary-hover: #007ccf;
-  --border-image: none;
 }
 
-#misProyectos{
+#sobreMi{
   padding: 0 140px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-#misProyectos #tituloCabecera{
+main #informacionSobreMi{
+  padding-top: 180px;
+}
+
+#sobreMiMain{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+#sobreMi h1{
   color: var(--color-primary);
+  font-family: var(--fuente-titulos);
+  width: 100%;
+  padding-bottom: 30px;
   font-size: 42px;
 }
 
-#proyectos{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 180px;
-  gap: 50px;
-  
-}
-
-.infoProjects{
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-#misProyectos h1{
+#sobreMi p{
   color: var(--color-text);
-  width: 100%;
+  font-family: var(--fuente-textos);
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.textoAzul{
+  color: var(--color-primary);
+}
+
+#foto{
+  height: 330px;
+  border-radius: 4px;
+}
+
+#tituloHobbies{
+  padding-top: 50px;
+}
+
+#hobbies{
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+#tituloHobbies{
   font-family: var(--fuente-titulos);
+  color: var(--color-primary);
+  font-size: 40px;
 }
 
-#misProyectos p{
+.hobbies{
   color: var(--color-text);
+  font-size: 19px;
   font-family: var(--fuente-textos);
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.project{
-  display: flex;
-  gap: 30px;
-}
-
-.tecnProjects{
-  display: flex;
-  gap: 8px;
-}
-
-.tecnProjects p{
+  border-radius: 6px;
+  padding: 10px 10px;
   background-color: #00000028;
-  padding: 5px 8px;
-  border-radius: 4px;
-}
-
-.imageProjects{
-  border-radius: 5px;
-  width: 400px;
-
-}
-
-.srcProject{
-  display: flex;
-  gap: 8px;
-}
-
-.srcProject a{
-  text-decoration: none;
-  color: var(--color-text);
-  font-family: var(--fuente-textos);
-  font-size: 20px;
-  font-weight: 700;
-  background-color: #00000028;
-  padding: 5px 8px;
-  border-radius: 4px;
-  &:hover{
-    cursor: pointer;
-    background-color: #2b2b2b48;
-    outline: 1px solid var(--color-secondary);
-  }
 }
 
 @media (width >= 1370px) {
-  #misProyectos{
+  #sobreMi{
     padding: 0 200px;
   }
 }
 
 @media (max-width: 1323px) {
-  #misProyectos{
+  #sobreMi{
     padding: 0 0;
   }
 }
@@ -143,12 +121,37 @@
 
 }
 
-@media (width >= 1550px){
-  #proyectos{
-    width: 900px;
+@media (width <= 800px){
+  #sobreMiMain{
+    display: flex;
+    flex-direction: column;
   }
 
-  #misProyectos{
+  #sobreMiFoto{
+    display: flex;
+  }
+
+  #foto{
+    display: flex;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  #hobbies{
+    padding-top: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (width >= 1550px){
+
+  #informacionSobreMi{
+    width: 890px;
+  }
+
+  #sobreMi{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,7 +160,6 @@
   }
 }
 
-
-@media (width >= 440px){
-
+@media (width <= 1050px){
+  
 }

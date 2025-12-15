@@ -1,0 +1,41 @@
+:root {
+  --color-primary: #09f;        /* títulos, enlaces principales */
+  --color-bg: #e9e1d1;
+  --color-bg-hover: #dad9d9;
+  --color-text: #333333;
+  --color-accent: #00c853;      /* verde brillante */
+  --color-secondary: #ffab00;   /* amarillo cálido */
+  --color-neutral: #eceff1;     /* gris claro */
+  --color-primary-hover: #007ccf;
+  --color-btn-mode: #09f;
+  --fuente-titulos: "Inter", sans-serif;   
+  --fuente-textos: "Anonymous Pro", monospace;
+}
+
+.dark {
+  --color-primary: #09f;
+  --color-bg: #13131d;
+  --color-bg-hover: #383846;
+  --color-text: #dcdcdc;
+  --color-accent: #00c853;
+  --color-secondary: #ffab00;
+  --color-neutral: #1a1a24;
+  --color-primary-hover: #007ccf;
+}
+
+#mainHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 160px;
+    padding-bottom: 100px;
+    width: 100%;
+
+    color: #00ffbf70; /* verde fosforescente */
+    text-shadow: 
+    0 0 2px #00ffbf70,
+    0 0 3px #00ffbf70,
+    0 0 2px #00ffbf70;
+    animation: flicker 1.5s;
+}

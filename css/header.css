@@ -179,11 +179,15 @@ body{
 
 @media (width >= 1550px){
     #navbar{
-        padding: 30px ;
+        padding: 20px ;
     }
 
     #navbar a{
         font-size: 20px;
+    }
+
+    #divIcon img{
+        height: 70px;
     }
 }
 

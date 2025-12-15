@@ -67,7 +67,7 @@
 
 @keyframes flickerSoft {
   0%   { opacity: 1; }
-  50%  { opacity: 0.75; }
+  50%  { opacity: 0.85; }
   100% { opacity: 1; }
 }
 
@@ -87,11 +87,15 @@
     text-align: center;
     color: var(--color-text);
     text-shadow: 
-    0 0 4px #00ff2abd,
-    0 0 5px #00ff2abd,
-    0 0 7px #00ff2abd;
+    0 0 4px #ff0000bd,
+    0 0 5px #00ff2a,
+    0 0 7px #00ff73ee;
     animation: flickerSoft 1.5s infinite alternate;
     z-index: -1;
+}
+
+#barConsole{
+    animation: flickerSoft .2s infinite alternate;
 }
 
 #mainHeader img{
@@ -102,15 +106,18 @@
 
 #mainHeaderButton{
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 14px;
     gap: 15px;
 }
 
 #mainHeaderButton .btnMain{
-    height: 40px;
-    width: 120px;
+    font-size: 12px;
+    padding: 12px 12px;
     border-radius: 4px;
     font-family: sans-serif;
+    text-decoration: none;
     font-weight: 600;
 }
 
@@ -161,7 +168,7 @@
 }
 
 @media (width >= 1550px){
-    #mainHeader{
+    main #mainHeader{
         padding-top: 250px;
     }
 
@@ -179,8 +186,7 @@
     }
 
     #mainHeaderButton .btnMain{
-        height: 60px;
-        width: 180px;
+        padding: 15px 20px;
         font-size: 17px;
     }
 }

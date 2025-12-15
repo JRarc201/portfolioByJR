@@ -10,7 +10,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sobremi.css">
     <link rel="stylesheet" href="css/misProyectos.css">
+    <link rel="stylesheet" href="css/educacion.css">
     <!-- Icono de pagina -->
     <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -24,38 +26,66 @@
     <header>
         <nav id="navbar">
             <div id="divIcon">
-                <img src="Images/favicon.png" alt="icon.png">
+                <a href="#"><img src="Images/favicon.png" alt="icon.png"></a>
             </div>
             <div id="divLinks">
                 <i id="xBurger" class="fa-solid fa-x"></i>
+                <a href="#sobreMi">SOBRE MI</a>
                 <a href="#misProyectos">PROYECTOS</a>
-                <a href="#">PORTAFOLIO</a>
+                <a href="#">HABILIDADES</a>
                 <a href="#">EDUCACIÓN</a>
-                <a href="#">SOBRE MI</a>
                 <a href="#">CONTACTAME</a>
             </div>
                 <i class="fa-solid fa-bars fa-lg" id="burger" ></i>
         </nav>
     </header>
-    <!-- Main-->
+    <!-- MAIN -->
     <main>
         <button id="mode"><i id="modeIcon" class="fa-solid fa-cloud-moon"></i></button>
-        <section id="mainHeader">
-        <img src="Images/favicon.png" alt="favicon.png">
-        <h1><span style="color: #ffab00;">Hey, </span>Soy Jose Guzmán</h1>
-        <h3>Desarrollador de Sorfware Frontend <span><i class="fa-solid fa-code" style="color: #09f;"></i></span> </h3>
-        <h3>+2 años de experiencia en <span style="color: #09f">Desarrollo Web</span id="barraConsola"><span>|</span></h3>
-        <section id="mainHeaderButton">
-            <input type="button" class="btnMain" id="btnCV" value="Descargar CV">
-            <input type="button" class="btnMain" id="btnProjects" value="Mis Proyecto">
+        <!-- MAIN INICIO -->
+            <section id="mainHeader">
+                <img src="Images/2.png" alt="favicon.png">
+                <h1><span style="color: #ffab00;">Hey, </span>Soy Jose Guzmán</h1>
+                <h3>Desarrollador de Sorfware Frontend <span><i class="fa-solid fa-code" style="color: #09f;"></i></span> </h3>
+                <h3>+2 años de experiencia en <span style="color: #09f">Desarrollo Web</span id="barraConsola"><span id="barConsole">|</span></h3>
+                <section id="mainHeaderButton">
+                    <a href="https://drive.google.com/uc?export=download&id=14EzmRue3RmhMyISDHJO26AE27mxN78MZ" class="btnMain" id="btnCV">Descargar CV</a>
+                    <a href="#misProyectos" class="btnMain" id="btnProjects">Mis Proyectos</a>
+                </section>
+            </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobreMi">
+        <section id="informacionSobreMi">
+        <h1>Sobre mí</h1>  
+            <section id="sobreMiMain">
+                <section id="sobreMiInfo">
+                <p>
+                ¡Hola! Mi nombre es<span class="textoAzul"> José Rubén Guzmán Canedo</span> y soy <span class="textoAzul">Desarrollador Front-End</span>, he realizado varios proyectos personales y un proyecto de una <span class="textoAzul">Fundación ONG</span>, tengo un certificado de <span class="textoAzul">Desarrollador Front End</span> y soy <span class="textoAzul">Ingeniero de Sistemas en formación.</span>
+                </p><br>
+                <span style="display: flex; align-items: center; flex-direction: row; gap: 10px;"><img height="16px" src="Images/co.png" alt="CO" style="border-radius: 3px;"><p>Colombiano </p></span><br>
+                <p> <span><i class="fa-solid fa-graduation-cap textoAzul"></i> Tecnologo en Sistemas de Información y Redes de Computo (Universidad del Sinú - Seccional Cartagena)</p>
+            </section>
+            <section id="sobreMiFoto">
+                <img id="foto" src="Images/foto.png" alt="Foto de José Guzmán">
+            </section>
+            </section>
+            <h2 id="tituloHobbies">Hobbies</h2>
+            <section id="hobbies">
+                <span class="hobbies"><i class="fa-solid fa-code textoAzul"></i> Code </span>
+                <span class="hobbies"><i class="fa-solid fa-drum textoAzul"></i> Bateria </span>
+                <span class="hobbies"><i class="fa-solid fa-guitar textoAzul"></i> Guitarra </span>
+                <span class="hobbies"><i class="fa-solid fa-seedling textoAzul"></i> Jardinería </span>
+                <span class="hobbies"><i class="fa-solid fa-masks-theater textoAzul"></i> Teatro </span>
+                <span class="hobbies"><i class="fa-solid fa-photo-film textoAzul"></i> Creador de Contenido de Fe</span>
+            </section>
         </section>
     </section>
-
-    <!-- Proyectos -->
+    <!-- PROYECTOS -->
     <section id="misProyectos"> 
         <section id="proyectos">
             <h1 id="tituloCabecera">Proyectos <span><i class="fa-solid fa-code"></i></span></h1>
-            <!-- FUNDACION VIDA ABUNDANTE -->
+            <!-- Fundación Vida Abundante -->
             <article id="pageFundacion" class="project">
                 <img class="imageProjects" src="Images/misProyectos/FVA.png" alt="">
                 <section class="infoProjects">
@@ -67,8 +97,8 @@
                     </section>
                     <p>Pagina web principal de la Fundación Vida abundante ubicada en Magangué, Bolivar pertenenciente a la iglesia Intermericana Principe de Paz,  </p>
                     <section class="srcProject">
-                        <p ><i class="fa-solid fa-code"></i> Ir</p>
-                        <p><i class="fa-brands fa-github"></i> Code</p>
+                        <a href="https://www.fundacionvidaabundante201.org/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> Ir</a>
+                        <a href="https://github.com/JRarc201/Fundacion-Vida-Abundante" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
                     </section>
                 </section>
             </article>
@@ -84,8 +114,8 @@
                     </section>
                     <p>To do List basico para guardar, tachar y eliminar tareas y pendientes, diseño minimalista y fluidez optima en PC y Telefonos moviles</p>
                     <section class="srcProject">
-                        <p ><i class="fa-solid fa-code"></i> Ir</p>
-                        <p><i class="fa-brands fa-github"></i> Code</p>
+                        <a href="https://jrarc201.github.io/To-do-List-JR/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> Ir</a>
+                        <a href="https://github.com/JRarc201/To-do-List-JR" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
                     </section>
                 </section>
             </article>
@@ -101,12 +131,17 @@
                     </section>
                     <p>Calculador de promedio de notas minimalista y dinamico, disponible para anexar la cantidad de notas necesarias y su valores en porcentaje.</p>
                     <section class="srcProject">
-                        <p ><i class="fa-solid fa-code"></i> Ir</p>
-                        <p><i class="fa-brands fa-github"></i> Code</p>
+                        <a href=""><i class="fa-solid fa-code"></i> Ir</a>
+                        <a href=""><i class="fa-brands fa-github"></i> Code</a>
                     </section>
                 </section>
             </article>
         </section>
+    </section>
+
+    <section id="Tecnologías">
+        <h1 id="tituloCabecera">Tecnologías</h1>
+
     </section>
     
     </main>
