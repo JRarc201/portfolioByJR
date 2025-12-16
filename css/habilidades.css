@@ -117,6 +117,7 @@
 @media (width <=1323px) {
     #misHabilidades {
         padding: 0 0;
+        padding-bottom: 150px;
     }
 }
 
@@ -125,7 +126,7 @@
     #habilidades {
         display: flex;
         flex-direction: column;
-
+        padding-bottom: 150px;
     }
 
     .imageProjects {
@@ -161,6 +162,7 @@
     #habilidades {
         display: flex;
         flex-direction: column;
+        padding-bottom: 150px;
     }
 
     #habilidades img {

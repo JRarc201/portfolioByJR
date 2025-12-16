@@ -50,7 +50,7 @@ main #informacionSobreMi{
 #sobreMi p{
   color: var(--color-text);
   font-family: var(--fuente-textos);
-  font-size: 23px;
+  font-size: 18px; 
   font-weight: 800;
 }
 
