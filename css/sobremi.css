@@ -26,10 +26,11 @@
 #sobreMi{
   padding: 0 140px;
   display: flex;
+  padding-bottom: 120px;
 }
 
 main #informacionSobreMi{
-  padding-top: 180px;
+  padding-top: 110px;
 }
 
 #sobreMiMain{
@@ -89,7 +90,8 @@ main #informacionSobreMi{
 
 @media (width >= 1370px) {
   #sobreMi{
-    padding: 0 200px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
 

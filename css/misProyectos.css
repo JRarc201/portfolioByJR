@@ -30,6 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 120px;
 }
 
 #misProyectos #tituloCabecera{
@@ -42,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 180px;
+  padding-top: 110px;
   gap: 50px;
   
 }
@@ -144,6 +145,7 @@
 }
 
 @media (width >= 1550px){
+  
   #proyectos{
     width: 900px;
   }

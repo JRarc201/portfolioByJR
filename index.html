@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/sobremi.css">
     <link rel="stylesheet" href="css/misProyectos.css">
     <link rel="stylesheet" href="css/educacion.css">
+    <link rel="stylesheet" href="css/habilidades.css">
     <!-- Icono de pagina -->
     <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -32,8 +33,7 @@
                 <i id="xBurger" class="fa-solid fa-x"></i>
                 <a href="#sobreMi">SOBRE MI</a>
                 <a href="#misProyectos">PROYECTOS</a>
-                <a href="#">HABILIDADES</a>
-                <a href="#">EDUCACIÓN</a>
+                <a href="#misHabilidades">HABILIDADES</a>
                 <a href="#">CONTACTAME</a>
             </div>
                 <i class="fa-solid fa-bars fa-lg" id="burger" ></i>
@@ -41,7 +41,7 @@
     </header>
     <!-- MAIN -->
     <main>
-        <button id="mode"><i id="modeIcon" class="fa-solid fa-cloud-moon"></i></button>
+        <button id="mode"><i id="modeIcon" class="fa-solid fa-moon"></i></button>
         <!-- MAIN INICIO -->
             <section id="mainHeader">
                 <img src="Images/2.png" alt="favicon.png">
@@ -57,34 +57,33 @@
     <!-- SOBRE MI -->
     <section id="sobreMi">
         <section id="informacionSobreMi">
-        <h1>Sobre mí</h1>  
+        <h1><i class="fa-solid fa-user textoAzul"></i> Sobre mí</h1>  
             <section id="sobreMiMain">
                 <section id="sobreMiInfo">
                 <p>
                 ¡Hola! Mi nombre es<span class="textoAzul"> José Rubén Guzmán Canedo</span> y soy <span class="textoAzul">Desarrollador Front-End</span>, he realizado varios proyectos personales y un proyecto de una <span class="textoAzul">Fundación ONG</span>, tengo un certificado de <span class="textoAzul">Desarrollador Front End</span> y soy <span class="textoAzul">Ingeniero de Sistemas en formación.</span>
                 </p><br>
-                <span style="display: flex; align-items: center; flex-direction: row; gap: 10px;"><img height="16px" src="Images/co.png" alt="CO" style="border-radius: 3px;"><p>Colombiano </p></span><br>
+                <span style="display: flex; align-items: center; flex-direction: row; gap: 10px;"><img height="16px" src="Images/co.png" alt="CO" style="border-radius: 3px;"><p>Colombiano / 25 años</p></span><br>
                 <p> <span><i class="fa-solid fa-graduation-cap textoAzul"></i> Tecnologo en Sistemas de Información y Redes de Computo (Universidad del Sinú - Seccional Cartagena)</p>
             </section>
             <section id="sobreMiFoto">
                 <img id="foto" src="Images/foto.png" alt="Foto de José Guzmán">
             </section>
             </section>
-            <h2 id="tituloHobbies">Hobbies</h2>
+            <h2 id="tituloHobbies"> <i class="fa-solid fa-street-view textoAzul"></i> Hobbies</h2>
             <section id="hobbies">
                 <span class="hobbies"><i class="fa-solid fa-code textoAzul"></i> Code </span>
                 <span class="hobbies"><i class="fa-solid fa-drum textoAzul"></i> Bateria </span>
                 <span class="hobbies"><i class="fa-solid fa-guitar textoAzul"></i> Guitarra </span>
                 <span class="hobbies"><i class="fa-solid fa-seedling textoAzul"></i> Jardinería </span>
                 <span class="hobbies"><i class="fa-solid fa-masks-theater textoAzul"></i> Teatro </span>
-                <span class="hobbies"><i class="fa-solid fa-photo-film textoAzul"></i> Creador de Contenido de Fe</span>
             </section>
         </section>
     </section>
     <!-- PROYECTOS -->
     <section id="misProyectos"> 
         <section id="proyectos">
-            <h1 id="tituloCabecera">Proyectos <span><i class="fa-solid fa-code"></i></span></h1>
+            <h1 id="tituloCabecera"><i class="fa-solid fa-code fa-xs textoAzul"></i> Proyectos</h1>
             <!-- Fundación Vida Abundante -->
             <article id="pageFundacion" class="project">
                 <img class="imageProjects" src="Images/misProyectos/FVA.png" alt="">
@@ -95,7 +94,7 @@
                         <p><i class="fa-brands fa-css" style="color: #66309A"></i> CSS</p>
                         <p><i class="fa-brands fa-square-js" style="color: #FFE008"></i> JS</p>
                     </section>
-                    <p>Pagina web principal de la Fundación Vida abundante ubicada en Magangué, Bolivar pertenenciente a la iglesia Intermericana Principe de Paz,  </p>
+                    <p>Pagina web principal de la Fundación Vida abundante ubicada en Magangué, Bolivar pertenenciente a la iglesia Intermericana Principe de Paz.</p>
                     <section class="srcProject">
                         <a href="https://www.fundacionvidaabundante201.org/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> Ir</a>
                         <a href="https://github.com/JRarc201/Fundacion-Vida-Abundante" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
@@ -138,12 +137,61 @@
             </article>
         </section>
     </section>
-
-    <section id="Tecnologías">
-        <h1 id="tituloCabecera">Tecnologías</h1>
-
+    <!-- HABILIDADES -->
+    <section id="misHabilidades"> 
+        <h1 class="titulos tituloHabilidades"><i class="fa-solid fa-star-half-stroke fa-xs textoAzul"></i> Habilidades </h1>
+        <section id="habilidades">
+            <section id="misTecnologias">
+                <h2 class="titulos">Tecnologías</h2>
+                <section id="tecnologias"> 
+                <span>
+                    <img src="Images/Habilidades/html-5.png" alt="html">
+                    <p>HTML</p>
+                </span> 
+                <span>
+                    <img src="Images/Habilidades/css.png" alt="css">
+                    <p>CSS</p>
+                </span>
+                <span>
+                    <img src="Images/Habilidades/js.png" alt="javascript">
+                    <p>JavaScript</p>
+                </span>
+                <span>
+                    <img src="Images/Habilidades/java.png" alt="java">
+                    <p>Java</p>
+                </span>
+                <span>
+                    <img src="Images/Habilidades/bootstrap-4.svg" alt="boostrap">
+                    <p>Boostrap</p>
+                </span>
+                <span>
+                    <img class="tecnIco" src="Images/Habilidades/piton.png" alt="">
+                    <p>Python</p>
+                </span>
+                </section>
+            </section>
+            <section id="misTecnologias">
+                <h2 class="titulos">Otras Tecnologías</h2>
+                <section id="tecnologias">
+                <span>
+                    <img class="tecnIco" src="Images/Habilidades/git-2.png" alt="git">
+                    <p>Git</p>
+                </span>
+                <span>
+                    <img class="tecnIco" src="Images/Habilidades/sql-2.png" alt="sql">
+                    <p>SQL</p>
+                </span>
+                <span>
+                    <img class="tecnIco" src="Images/Habilidades/figma-2.png" alt="css">
+                    <p>Figma</p>
+                </span>
+                </section> 
+            </section>
+        </section>
     </section>
-    
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

@@ -18,20 +18,20 @@ xBurger.addEventListener('click', () => {
 // Verifica si está en modo Light o modo Dark
 if (localStorage.getItem('theme') === 'dark') {
   body.classList.add('dark');
-  modeIcon.classList.remove("fa-solid", "fa-cloud-moon");
-  modeIcon.classList.add("fa-solid", "fa-cloud-sun", "fa-flip-horizontal");
+  modeIcon.classList.remove("fa-solid","fa-moon");
+  modeIcon.classList.add("fa-solid", "fa-sun");
 }
 
 mode.addEventListener('click', () => {
   body.classList.toggle('dark');
 
   if (body.classList.contains('dark')) {
-    modeIcon.classList.remove("fa-solid", "fa-cloud-moon");
-    modeIcon.classList.add("fa-solid", "fa-cloud-sun", "fa-flip-horizontal");
+    modeIcon.classList.remove("fa-solid","fa-moon");
+    modeIcon.classList.add("fa-solid", "fa-sun");
     localStorage.setItem('theme', 'dark');
   } else {
-    modeIcon.classList.remove("fa-solid", "fa-cloud-sun", "fa-flip-horizontal");
-    modeIcon.classList.add("fa-solid", "fa-cloud-moon");
+    modeIcon.classList.remove("fa-solid", "fa-sun");
+    modeIcon.classList.add("fa-solid","fa-moon");
     localStorage.setItem('theme', 'light');
   }
 });
