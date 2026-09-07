@@ -10,6 +10,10 @@
   --color-btn-mode: #09f;
   --fuente-titulos: "Inter", sans-serif;   
   --fuente-textos: "Anonymous Pro", monospace;
+  --tex-shadow: 
+    0 0 4px #379f9dbd,
+    0 0 5px #62b1db,
+    0 0 7px #28c9cfee;
 }
 
 .dark {
@@ -21,6 +25,10 @@
   --color-secondary: #ffab00;
   --color-neutral: #1a1a24;
   --color-primary-hover: #007ccf;
+  --tex-shadow: 
+    0 0 4px #3ecebdbd,
+    0 0 5px #3bcc53,
+    0 0 7px #36cf28ee;
 }
 
 #mainHeader{
@@ -92,10 +100,7 @@
     font-weight: 800;
     text-align: center;
     color: var(--color-text);
-    text-shadow: 
-    0 0 4px #3ecebdbd,
-    0 0 5px #3bcc53,
-    0 0 7px #36cf28ee;
+    text-shadow: var(--tex-shadow);
     animation: flickerSoft 1.5s infinite alternate;
     z-index: -1;
 }
@@ -177,7 +182,7 @@
 
 @media (width >= 1550px){
     main #mainHeader{
-        padding-top: 250px;
+        padding-top: 200px;
     }
 
 

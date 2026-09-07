@@ -110,6 +110,20 @@ body{
     color: var(--color-text);
 }
 
+/* Overlay que oscurece el fondo cuando el menú hamburguesa está abierto */
+#overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 90;
+}
+
 #xBurger{
     display: none;
 }
@@ -119,34 +133,65 @@ body{
         padding: 0 25px;
     }
 
-    
     #navbar{
         justify-content: space-between;
         z-index: 999;
     }
 
-    #divLinks{
+#divLinks{
         display: none;
-        background-color: #09f;
+        background-color: var(--color-bg);
         position: absolute;
-        right: 0;
-        top: 0;
-        height: 1000%;
-        padding: 30px 20px;
+        width: 100%;
+        top: 85px;
+        left: 0;
+        padding: 0;
         flex-direction: column;
-        animation: slideIn .4s forwards;
         z-index: 9999;
+        align-items: center;
+        gap: 0;
+        border-top: 1px solid #0099ff93;
     }
-    
+
+/* Menú abierto: animación de entrada */
+    #divLinks.active {
+        display: flex;
+        animation: slideIn .4s forwards;
+    }
+
+    /* Menú cerrándose: animación de salida */
+    #divLinks.closing {
+        display: flex;
+        animation: slideOut .4s forwards;
+    }
+
     @keyframes slideIn {
         from {
-            right: -300px; /* fuera del contenedor */
+            transform: translateX(300px); /* fuera del contenedor */
             opacity: 0;
         }
         to {
-            right: 0; /* pegado al borde derecho */
+            transform: translateX(0); /* en su lugar */
             opacity: 1;
         }
+    }
+
+/* Animación inversa para el cierre */
+    @keyframes slideOut {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(300px); /* sale hacia la derecha */
+            opacity: 0;
+        }
+    }
+
+    /* El overlay se muestra solo cuando el menú está abierto */
+    #overlay.show {
+        opacity: 1;
+        visibility: visible;
     }
 
     #divLinks div{
@@ -154,8 +199,11 @@ body{
     }
 
     #divLinks a{
-        display: flex;
         color: #ffffff;
+        padding: 20px 0;
+        width: 100%;
+        border-bottom: 1px solid #0099ff93; 
+        padding-left: 30px;
         &:hover{
             color: #fff;
         }
